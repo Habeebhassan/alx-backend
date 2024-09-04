@@ -63,4 +63,3 @@ class LIFOCache(BaseCaching):
             present in the cache or if the key is None.
         """
         return self.cache_data.get(key)
-
