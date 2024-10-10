@@ -8,7 +8,7 @@ redisClient.on('connect', function () {
 });
 
 redisClient.on('error', function (error) {
-    console.log(`client not connected to the server: ${error.message}`);
+    console.log(`Redis client not connected to the server: ${error.message}`);
 });
 
 //subscribe to holberton school channel

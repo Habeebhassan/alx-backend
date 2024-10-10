@@ -4,11 +4,11 @@ const publisher = createClient();
 
 //connect to redis server
 publisher.on('connect', function () {
-    console.log('client connected to the server');
+    console.log('Redis client connected to the server');
 });
 
 publisher.on('error', function(error) {
-    console.log(`Redis not connected to the server: ${error.message}`);
+    console.log(`Redis client not connected to the server: ${error.message}`);
 });
 
 //function to publish message to holberton school channel
